@@ -117,10 +117,10 @@ export const Products = () => {
             },
         }
     
-        const prodetail = prod_text[prodId];  // 숫자로 변환된 prodId를 사용
+        const prodetail = prod_text[prodId]; 
     
-        console.log("prodId:", prodId); // prodId 확인을 위한 로그 추가
-        console.log("prodetail:", prodetail); // prodetail 값 확인
+        console.log("prodId:", prodId); 
+        console.log("prodetail:", prodetail);
     
         return (
             <div>

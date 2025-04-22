@@ -32,15 +32,15 @@ function App() {
     //   <Route path="/login" element={<Login />} />
     //   <Route path="/home" element={<PrivateRoute element ={<PrivateRoute  element={<Home />} isAuthenticated={isAuthenticated}/>} />} />
     // </Routes>
-      // <Routes>
-      //   <Route path="/:lang/home" element={<Home />} />
-      // </Routes>
-      <Routes>
-         <Route path="/" element={<h1>메인 페이지</h1>} />
-         <Route path="/categories" element={<Categories />} />
+    // <Routes>
+    //   <Route path="/:lang/home" element={<Home />} />
+    // </Routes>
+    <Routes>
+      <Route path="/" element={<h1>메인 페이지</h1>} />
+      <Route path="/categories" element={<Categories />} />
       <Route path="/categories/:categoriId" element={<Products />} />
       <Route path="/categories/:categoriId/products/:prodId" element={<ProductDetail />} />
-      </Routes>
+    </Routes>
 
      
      
