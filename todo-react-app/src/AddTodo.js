@@ -33,7 +33,7 @@ import {Button,Grid,TextField} from '@mui/material'
 
 //react에서 style 줄 때는 js객체형식으로 줘야한다.
 
-//props로 넘어온 데이터는 
+//props로 넘어온 내용을 받아서 사용할 준비가 끝남
 const AddTodo = ({add}) => {
 
     const [item, setItem] = useState({title:""});
@@ -48,6 +48,7 @@ const AddTodo = ({add}) => {
             alert('내용을 입력하세요');
             return;//진행하지 않고 함수를 빠져나간다.
         }
+
         //props로 넘겨받은 add함수를 호출
         add(item); //add({title:'내용'})
         setItem({title:""})//함수에 전달을 하고 나면 입력필드를 비워준다.
@@ -71,8 +72,9 @@ const AddTodo = ({add}) => {
                     placeholder='Add Todo here' 
                     fullWidth
                     value={item.title}
-                    onChange={onIputCahnge}
-                    onKeyDown={enterKeyEventHandler} />
+                    onChange={onIputCahnge} 
+                    onKeyDown={enterKeyEventHandler}
+                />   
             </Grid>
             <Grid xs={1} md={1} item>
                 <Button 
